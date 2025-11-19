@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta information and page setup -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enquiry | Green Future Foundation</title>
+
+  <!-- SEO meta tags for description and keywords -->
+  <meta name="description" content="Enquire about volunteering, sponsoring or partnering with Green Future Foundation.">
+  <meta name="keywords" content="enquiry, volunteer, sponsor, partner, green future">
+
+  <!-- External CSS link for consistent styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header section containing logo/title and navigation menu -->
+  <header>
+    <div class="container header-container">
+      <h1>Green Future Foundation</h1>
+      <nav id="main-nav">
+        <ul>
+          <!-- Navigation links to all main pages -->
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="get-involved.html">Get Involved</a>
+          <a href="resources.html">Resources</a>
+          <a href="enquiry.html" class="active">Enquire</a> <!-- Active page highlighted -->
+          <a href="contact.html">Contact</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content section -->
+  <main class="container">
+    <h1>Make an Enquiry</h1>
+    <p>Tell us what you're interested in — volunteering, sponsoring or partnering — and we'll follow up.</p>
+
+    <!-- Enquiry form section -->
+    <!-- The 'novalidate' attribute allows custom validation through JavaScript -->
+    <form id="enquiryForm" novalidate>
+
+      <!-- Input field for full name -->
+      <label for="e-name">Full name</label>
+      <input id="e-name" name="name" type="text" required>
+
+      <!-- Input field for email address -->
+      <label for="e-email">Email address</label>
+      <input id="e-email" name="email" type="email" required>
+
+      <!-- Dropdown to select type of enquiry -->
+      <label for="e-type">Enquiry type</label>
+      <select id="e-type" name="type" required>
+        <option value="volunteer">Volunteer</option>
+        <option value="sponsor">Sponsor</option>
+        <option value="partner">Partner</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Text area for additional message input -->
+      <label for="e-message">Message</label>
+      <textarea id="e-message" name="message" rows="6" required></textarea>
+
+      <!-- Checkbox options for user availability -->
+      <fieldset>
+        <legend>Availability</legend>
+        <label><input type="checkbox" name="days" value="weekdays"> Weekdays</label>
+        <label><input type="checkbox" name="days" value="weekends"> Weekends</label>
+      </fieldset>
+
+      <!-- Submit button to send enquiry -->
+      <button type="submit">Submit Enquiry</button>
+    </form>
+
+    <!-- Response container to display success or error messages via JavaScript -->
+    <div id="enquiry-response" class="response" aria-live="polite"></div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Green Future Foundation</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript file for form validation and interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>

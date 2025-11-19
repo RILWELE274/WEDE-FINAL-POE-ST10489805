@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Part 3 SEO: Added meta description and keywords -->
+  <title>Contact Us - Green Future Foundation</title>
+  <meta name="description" content="Contact Green Future Foundation for volunteering, partnerships, or general enquiries. Reach out via phone, email, or our online form.">
+  <meta name="keywords" content="Green Future Foundation, contact, volunteer, partnership, enquiry, sustainability">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <h1>Green Future Foundation</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="get-involved.html">Get Involved</a> |
+        <a href="resources.html">Resources</a> |
+        <a href="enquiry.html">Enquire</a> |
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="container hero-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Reach out for partnerships, volunteering, or general enquiries.</p>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="container contact-info">
+    <h3>Our Office</h3>
+    <p>
+      <strong>Address:</strong> 123 Green Street, Cape Town, South Africa<br/>
+      <strong>Phone:</strong> +27 21 555 0123<br/>
+      <strong>Email:</strong> hello@greenfuture.org.za
+    </p>
+    <p><strong>Hours:</strong> Mon–Fri, 09:00–17:00</p>
+  </section>
+
+  <!-- Map -->
+  <section class="container map-container">
+    <h3>Find Us on the Map</h3>
+
+    <!-- Part 3: Added title attribute for accessibility -->
+    <iframe
+      title="Green Future Foundation location map"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=123%20Green%20Street%2C%20Cape%20Town%2C%20South%20Africa&output=embed">
+    </iframe>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="container contact-form">
+    <form id="contactForm" novalidate>
+      <h3>Send Us a Message</h3>
+
+      <label for="name">Full Name</label><br>
+      <input id="name" name="name" type="text" placeholder="Your name" required><br><br>
+
+      <label for="email">Email Address</label><br>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea><br><br>
+
+      <!-- Part 3: Submit button triggers JS validation & response -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Part 3: Added response div for user feedback after submission -->
+    <div id="contact-response" class="response" aria-live="polite"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container footer-container">
+    <p>&copy; 2025 Green Future Foundation | Designed for Educational Purposes</p>
+  </footer>
+
+  <!-- Part 3: Added script reference for form validation & submission handling -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
