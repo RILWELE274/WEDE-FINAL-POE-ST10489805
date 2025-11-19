@@ -13,25 +13,44 @@ Overview
 
 
 This project demonstrates the development and enhancement of a responsive, accessible, and fully interactive website application. Following feedback from Part 2, comprehensive improvements have been implemented to meet assessment requirements, including enhanced functionality, accessibility, dynamic content, interactivity, and visual design. The website incorporates:
+
+
+
 •	Enquiry & Contact Forms: Client-side validation, user feedback messages, and mailto integration.
+
 •	Dynamic Content Loader: Fetching items from items.json with live search and sorting features.
+
 •	Gallery with Lightbox: Interactive image viewing with next/previous navigation and keyboard support.
+
 •	Responsive Design: Media queries ensuring a seamless experience across desktop, tablet, and mobile devices.
+
 •	Accessibility Features: Alt text, ARIA attributes, focus management, and error messaging.
+
 •	Google Maps Integration: Embedded map with marker and information window.
+
 •	UI Components: Accordions, tabs, and modals for improved interaction.This Part 3 submission reflects all changes and improvements made based on Part 2 feedback, ensuring the project meets high standards of usability, functionality, and documentation.
 
 
-Features Implemented
+Features Implemented:
+
+
 
 •	Fully validated Enquiry Form with cost calculation and availability simulation.
+
 •	Contact Form integration using mailto for direct communication.
+
 •	Dynamic Items List loaded from data/items.json with live search and sort.
+
 •	Gallery Lightbox for viewing images interactively.
+
 •	Google Maps integration with ARIA accessibility support.
+
 •	Responsive Layout with media queries for tablets and mobile devices.
+
 •	Interactive UI Components (accordions, tabs, modals) with keyboard accessibility.
+
 •	Consistent Styling across pages using an external CSS stylesheet.
+
 
 
 
@@ -41,12 +60,19 @@ Improvements and Updates (Based on Feedback from Part 2)
 
 
 •	Enhanced form validation with detailed user guidance.
+
 •	Added interactive lightbox for gallery images.
+
 •	Improved mobile responsiveness using media queries.
+
 •	Optimized CSS for typography, layout, and color consistency.
+
 •	Implemented dynamic content loading from JSON data.
+
 •	Added ARIA attributes and accessibility improvements.
+
 •	Updated README with detailed overview, changelog, and references.
+
 •	Refined navigation for clarity and active page highlighting.
 
 
@@ -57,6 +83,7 @@ Improvements and Updates (Based on Feedback from Part 2)
 
 
 Changelog
+
 
 2025-11-05: Expanded the project overview to provide more context and clearly explain the purpose and functionality of the website. This addressed feedback from Part 2 to make the README more informative and user-friendly.
 
@@ -93,10 +120,15 @@ The website includes the following core pages:
 
 
 •	Home — Organisation overview, mission, vision, and featured projects.
+
 •	About Us — Information about GFF’s history and impact.
+
 •	Get Involved — Volunteer, donation, and partnership opportunities.
+
 •	Resources — Educational guides, articles, and videos.
+
 •	Enquiry — Interactive enquiry form with validation and cost estimation.
+
 •	Contact — Contact form linked to mailto for direct communication.
 
 
@@ -168,13 +200,17 @@ o	Close button and click outside to close
 
 
 •	initMap callback used to display the organisation location.
+
 •	Interactive marker with info window.
+
 •	Accessible map with role="region" and aria-label.
 
 8. UI Components
 
 •	Accordions — Expandable panels for content.
+
 •	Tabs — Switch between tabbed content with ARIA roles.
+
 •	Modals — Pop-up windows with focus management and keyboard support.
 
 
@@ -184,9 +220,13 @@ Accessibility & SEO
 
 
 •	All images have descriptive alt text.
+
 •	Forms have proper labels and ARIA attributes.
+
 •	Pages use semantic headings (<h1>, <h2>) and lists.
+
 •	Navigation is keyboard-friendly and responsive.
+
 •	Meta description and keywords present for all pages.
 
 
@@ -196,9 +236,13 @@ Technologies Used
 
 
 •	HTML5 — Semantic page structure.
+
 •	CSS3 — Styling, responsive design, and layout management.
+
 •	JavaScript (ES6+) — Dynamic content, form validation, lightbox, search/sort.
+
 •	ARIA — Accessibility roles and live regions.
+
 •	Google Maps API — Interactive map.
 
 
@@ -210,10 +254,14 @@ Instructions
 
 
 1.	Clone or download the repository.
-2.	Open index.html in a modern browser.
-3.	Ensure js/script.js and data/items.json are in correct paths.
-4.	Update CONFIG.recipientEmail in script.js to your actual email.
-5.	Include a valid Google Maps API key in the <script> tag on the contact page if using maps.
+   
+3.	Open index.html in a modern browser.
+   
+4.	Ensure js/script.js and data/items.json are in correct paths.
+   
+5.	Update CONFIG.recipientEmail in script.js to your actual email.
+   
+6.	Include a valid Google Maps API key in the <script> tag on the contact page if using maps.
 
 
 
